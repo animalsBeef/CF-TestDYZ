@@ -17,7 +17,9 @@
 		5F7DC8FD1D8E5A0A002A9D4A /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7DC8FC1D8E5A0A002A9D4A /* Live.storyboard */; };
 		5F7DC8FF1D8E5A22002A9D4A /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7DC8FE1D8E5A22002A9D4A /* Follow.storyboard */; };
 		5F7DC9011D8E5A39002A9D4A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7DC9001D8E5A39002A9D4A /* Profile.storyboard */; };
-		5F7DC9031D8E5BA2002A9D4A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7DC9021D8E5BA2002A9D4A /* MainViewController.swift */; };
+		5F7DC9081D8E60B9002A9D4A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7DC9051D8E60B9002A9D4A /* MainViewController.swift */; };
+		5F7DC9161D8E61CE002A9D4A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7DC9151D8E61CE002A9D4A /* HomeViewController.swift */; };
+		5F7DC9191D8E6DA5002A9D4A /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7DC9181D8E6DA5002A9D4A /* UIBarButtonItem-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,11 +52,13 @@
 		5F15B3061D88332E00D3F517 /* DYZBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYZBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F15B30A1D88332E00D3F517 /* DYZBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYZBUITests.swift; sourceTree = "<group>"; };
 		5F15B30C1D88332E00D3F517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F7DC8FA1D8E59F6002A9D4A /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		5F7DC8FC1D8E5A0A002A9D4A /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
-		5F7DC8FE1D8E5A22002A9D4A /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
-		5F7DC9001D8E5A39002A9D4A /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		5F7DC9021D8E5BA2002A9D4A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5F7DC8FA1D8E59F6002A9D4A /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../Home.storyboard; sourceTree = "<group>"; };
+		5F7DC8FC1D8E5A0A002A9D4A /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Live.storyboard; path = ../Live.storyboard; sourceTree = "<group>"; };
+		5F7DC8FE1D8E5A22002A9D4A /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Follow.storyboard; path = ../Follow.storyboard; sourceTree = "<group>"; };
+		5F7DC9001D8E5A39002A9D4A /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../Profile.storyboard; sourceTree = "<group>"; };
+		5F7DC9051D8E60B9002A9D4A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5F7DC9151D8E61CE002A9D4A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5F7DC9181D8E6DA5002A9D4A /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +152,9 @@
 		5F5043C11D8E2D9F001AB1FB /* Follow */ = {
 			isa = PBXGroup;
 			children = (
-				5F7DC8FE1D8E5A22002A9D4A /* Follow.storyboard */,
+				5F7DC9131D8E6105002A9D4A /* Model */,
+				5F7DC9141D8E6105002A9D4A /* View */,
+				5F7DC9121D8E6105002A9D4A /* Controller */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -156,7 +162,9 @@
 		5F5043C21D8E2D9F001AB1FB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				5F7DC8FA1D8E59F6002A9D4A /* Home.storyboard */,
+				5F7DC90A1D8E60DC002A9D4A /* Model */,
+				5F7DC90B1D8E60DC002A9D4A /* View */,
+				5F7DC9091D8E60DC002A9D4A /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -164,7 +172,9 @@
 		5F5043C31D8E2D9F001AB1FB /* Live */ = {
 			isa = PBXGroup;
 			children = (
-				5F7DC8FC1D8E5A0A002A9D4A /* Live.storyboard */,
+				5F7DC90D1D8E60E6002A9D4A /* Model */,
+				5F7DC90E1D8E60E6002A9D4A /* View */,
+				5F7DC90C1D8E60E6002A9D4A /* Controller */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -172,8 +182,9 @@
 		5F5043C41D8E2D9F001AB1FB /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				5F15B2EE1D88332E00D3F517 /* Main.storyboard */,
-				5F7DC9021D8E5BA2002A9D4A /* MainViewController.swift */,
+				5F7DC9061D8E60B9002A9D4A /* Model */,
+				5F7DC9071D8E60B9002A9D4A /* View */,
+				5F7DC9041D8E60B9002A9D4A /* Controller */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -181,7 +192,9 @@
 		5F5043C51D8E2D9F001AB1FB /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				5F7DC9001D8E5A39002A9D4A /* Profile.storyboard */,
+				5F7DC9101D8E60F6002A9D4A /* Model */,
+				5F7DC9111D8E60F6002A9D4A /* View */,
+				5F7DC90F1D8E60F6002A9D4A /* Controller */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -189,8 +202,129 @@
 		5F5043C61D8E2D9F001AB1FB /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				5F7DC9171D8E6D31002A9D4A /* Extension */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		5F7DC9041D8E60B9002A9D4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F15B2EE1D88332E00D3F517 /* Main.storyboard */,
+				5F7DC9051D8E60B9002A9D4A /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F7DC9061D8E60B9002A9D4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F7DC9071D8E60B9002A9D4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F7DC9091D8E60DC002A9D4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F7DC8FA1D8E59F6002A9D4A /* Home.storyboard */,
+				5F7DC9151D8E61CE002A9D4A /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F7DC90A1D8E60DC002A9D4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F7DC90B1D8E60DC002A9D4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F7DC90C1D8E60E6002A9D4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F7DC8FC1D8E5A0A002A9D4A /* Live.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F7DC90D1D8E60E6002A9D4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F7DC90E1D8E60E6002A9D4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F7DC90F1D8E60F6002A9D4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F7DC9001D8E5A39002A9D4A /* Profile.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F7DC9101D8E60F6002A9D4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F7DC9111D8E60F6002A9D4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F7DC9121D8E6105002A9D4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F7DC8FE1D8E5A22002A9D4A /* Follow.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F7DC9131D8E6105002A9D4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F7DC9141D8E6105002A9D4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F7DC9171D8E6D31002A9D4A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5F7DC9181D8E6DA5002A9D4A /* UIBarButtonItem-Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,7 +463,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F15B2EB1D88332E00D3F517 /* AppDelegate.swift in Sources */,
-				5F7DC9031D8E5BA2002A9D4A /* MainViewController.swift in Sources */,
+				5F7DC9081D8E60B9002A9D4A /* MainViewController.swift in Sources */,
+				5F7DC9191D8E6DA5002A9D4A /* UIBarButtonItem-Extension.swift in Sources */,
+				5F7DC9161D8E61CE002A9D4A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +507,7 @@
 				5F15B2EF1D88332E00D3F517 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../..;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		5F15B2F31D88332E00D3F517 /* LaunchScreen.storyboard */ = {
@@ -474,7 +610,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mingqh.www.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -488,7 +624,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mingqh.www.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
