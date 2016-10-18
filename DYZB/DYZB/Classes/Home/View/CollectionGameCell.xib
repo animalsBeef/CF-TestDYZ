@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionGameCell" customModule="DYZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英雄联盟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrW-dz-JCL">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="9B8-NR-kFH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w2I-AO-shT">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="w2I-AO-shT" secondAttribute="height" multiplier="1:1" id="Kcb-2G-Bwr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="22.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="w2I-AO-shT" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="5pm-gF-6FB"/>
+                <constraint firstItem="WrW-dz-JCL" firstAttribute="top" secondItem="w2I-AO-shT" secondAttribute="bottom" constant="5" id="8d1-Tk-bLg"/>
+                <constraint firstItem="w2I-AO-shT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="FMV-nc-SCf"/>
+                <constraint firstItem="WrW-dz-JCL" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="rJ3-D2-cZ1"/>
+                <constraint firstAttribute="bottom" secondItem="WrW-dz-JCL" secondAttribute="bottom" constant="10" id="zht-l4-LCs"/>
+            </constraints>
+            <size key="customSize" width="125" height="115"/>
+            <connections>
+                <outlet property="iconImageView" destination="w2I-AO-shT" id="4kw-dd-4a9"/>
+                <outlet property="titleLabel" destination="WrW-dz-JCL" id="053-qS-R2z"/>
+            </connections>
+            <point key="canvasLocation" x="62" y="84"/>
+        </collectionViewCell>
+    </objects>
+</document>
